@@ -15,14 +15,6 @@ import mtomicro2 from '../images/mtomicro2.jpeg';
 import "./home.css";
 
 function Home() {
-  const [data, setData] = React.useState(null);
-
-  React.useEffect(() => {
-    fetch("/macroapi")
-      .then((res) => res.json())
-      .then((data) => setData(data.message));
-  }, []);
-
   return (
     <div className="home">
       <Typography style={{width:"100%", color: "rgb(4 26 74)"}} variant="h4" component="div">
