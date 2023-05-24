@@ -1,5 +1,5 @@
 import "./flowdiag.css";
-import bkdemoflowdiag from '../bkdemoflowdiag.png';
+import bkdemoflowdiag from '../images/bkdemoflowdiag.png';
 import { Paper } from "@mui/material";
 
 export default function FlowDiag() {

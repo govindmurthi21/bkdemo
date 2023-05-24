@@ -4,16 +4,16 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import bkdemoflowdiag from '../bkdemoflowdiag.png';
 
-export default function ActionAreaCard({text, title}) {
+
+export default function ActionAreaCard({text, title, diag}) {
   return (
     <Card sx={{ maxWidth: 345, margin: 1 }}>
       <CardActionArea>
         <CardMedia
           component="img"
           height="140"
-          image={bkdemoflowdiag}
+          image={diag}
           alt="Demo"
         />
         <CardContent>

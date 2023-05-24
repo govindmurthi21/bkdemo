@@ -15,7 +15,7 @@ class MicroFrontend extends React.Component {
         const scriptId = `microfrontend-script-${name}`;
 
         if(document.getElementById(scriptId)) {
-            this.mountMicroFrontend();
+            // this.mountMicroFrontend();
             return;
         }
 
