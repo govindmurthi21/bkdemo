@@ -1,13 +1,17 @@
 import "./flowdiag.css";
-import bkdemoflowdiag from '../images/bkdemoflowdiag.png';
-import { Paper } from "@mui/material";
+import { Paper, Typography } from "@mui/material";
 
-export default function FlowDiag() {
+export default function FlowDiag({img, title}) {
   return (
-    <Paper>
+    <>
+      <Paper>
         <div className="flow-diag">
-        <img src={bkdemoflowdiag} alt="BK DEMO FLOW" width={"100%"}/>
+        <Typography style={{width:"100%", alignSelf: "center", color: "#fff"}} variant="h4" component="div">
+        {title}
+      </Typography>
+        <img src={img} alt="BK DEMO FLOW" width={"100%"}/>
         </div>
     </Paper>
+    </>
   );
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import ActionAreaCard from "../components/ActionAreaCard";
 import FlowDiag from "../components/FlowDiag";
-import { Typography } from "@mui/material";
+import { Paper, Typography } from "@mui/material";
 import busicapa from '../images/busicapa.jpeg';
 import failfast from '../images/failfast.jpeg';
 import mtomicro from '../images/mtomicro.png';
@@ -11,6 +11,8 @@ import decomp from '../images/decomp.png';
 import distdbs from '../images/distdbs.png';
 import microser from '../images/microser.png';
 import mtomicro2 from '../images/mtomicro2.jpeg';
+import hypomono from '../images/hypomono.png';
+import bkdemoflowdiag from '../images/bkdemoflowdiag.png';
 
 import "./home.css";
 
@@ -65,10 +67,8 @@ function Home() {
         title="AWS Most Things"
         diag={awsserv}
       />
-      <Typography style={{width:"100%", color: "rgb(4 26 74)"}} variant="h4" component="div">
-        Hypothetical Monolith Decomposed - A Demostration
-      </Typography>
-      <FlowDiag />
+      <FlowDiag img={hypomono} title="Hypothetical Monolith"/>
+      <FlowDiag img={bkdemoflowdiag} title="Hypothetical Monolith Decomposed - POC"/>
     </div>
   );
 }
